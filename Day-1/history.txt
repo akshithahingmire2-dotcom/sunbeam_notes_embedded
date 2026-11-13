@@ -1,0 +1,116 @@
+# ===== File & Directory Operations =====
+
+pwd
+ls
+ls -l
+ls -a
+
+# Create directories
+mkdir testdir
+mkdir dirA dirB
+ls
+
+cd testdir
+pwd
+
+# Create files
+touch file1.txt
+touch file2.txt
+ls
+
+# Copy within same directory
+cp file1.txt copy.txt
+ls
+
+# Rename file (move within same directory)
+mv copy.txt newcopy.txt
+ls
+
+# Delete file
+rm newcopy.txt
+ls
+
+cd ..
+
+# Remove empty directory
+rmdir testdir
+
+
+# ===== Copy & Move Between Directories =====
+
+mkdir source destination
+touch source/demo1.txt
+ls source
+
+# Copy file to different directory
+cp source/demo1.txt destination/
+ls destination
+
+# Move file to different directory
+mv source/demo1.txt destination/
+ls destination
+
+# Copy directory recursively
+cp -r destination backup
+ls
+
+# Remove directory recursively
+rm -r backup
+
+
+# ===== CAT Command (File Creation & Viewing) =====
+
+cat file1.txt
+cat > demo.txt
+cat demo.txt
+cat >> demo.txt
+cat demo.txt
+
+
+# ===== Date & Calendar =====
+
+date
+cal
+cal -y
+
+
+# ===== Arithmetic Operations =====
+
+expr 10 + 2
+expr 10 - 2
+expr 10 / 2
+expr 10 \* 2
+expr 10 % 3
+
+
+# ===== File Information =====
+
+stat demo.txt
+file demo.txt
+wc demo.txt
+
+
+# ===== Manual (Help) Commands =====
+
+man date
+man ls
+man cal
+man man
+man 3 printf
+
+
+# ===== Process Commands =====
+
+ps
+top
+
+
+# ===== System Commands =====
+
+clear
+
+
+
+# ===== History Commands =====
+
+history
